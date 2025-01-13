@@ -6,5 +6,32 @@
 }
 
 .blueBand {
-    background-color: rgba(29, 28, 29, 255);
+    background-color: rgba(2, 131, 248, 255)
+}
+
+.navLink>a {
+    padding-right: 25px;
+    text-decoration: none;
+    color: black;
+}
+
+.navLink>a:hover {
+    border-bottom: 2px solid blue;
+}
+
+.blueBandLink {
+    text-decoration: none;
+    padding-left: 8px;
+}
+
+.blueBandLink:hover {
+    text-decoration: underline;
+}
+
+.sezioneJumbo {
+    background-image: url(./assets/img/footer-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
 }
