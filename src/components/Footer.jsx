@@ -86,7 +86,7 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div className="sezioneSignUp d-flex justify-content-between bg-black align-items-center">
+            <div className="sezioneSignUp d-flex justify-content-between bg-black align-items-center px-3 py-3">
                 <div>
                     <button>SIGN-UP NOW</button>
                 </div>

@@ -3,7 +3,7 @@ import logo from '../assets/img/dc-logo.png';
 const Header = () => {
     return (
 
-        <header className='d-flex align-items-center justify-content-between px-5 my-1'>
+        <header className='d-flex align-items-center justify-content-between px-5 my-4'>
             <div>
                 <img className='' src={logo} alt="DC Logo" style={{ width: "50px", height: "50px", borderRadius: "50%" }} />
             </div>
