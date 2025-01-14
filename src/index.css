@@ -57,3 +57,9 @@
     background-repeat: no-repeat;
     width: 100%;
 }
+
+.listaFooter li a {
+    text-decoration: none;
+    list-style: none;
+    color: gray
+}

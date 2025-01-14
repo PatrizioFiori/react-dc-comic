@@ -10,7 +10,8 @@ import pintLogo from '../assets/img/footer-pinterest.png'
 import perisLogo from '../assets/img/footer-periscope.png'
 import footerBg from '../assets/img/footer-bg.jpg'
 
-const Footer = () => {
+const Footer = (props) => {
+    const { dcComicsLink, shopLinks, dcLinks, sitesLink } = props
     return (
         <footer>
             <div className=" blueBand d-flex justify-content-center align-items-center py-5">
@@ -41,46 +42,42 @@ const Footer = () => {
                     <div class="col-md-2">
                         <h3>DC COMICS</h3>
                         <ul class="list-unstyled listaFooter">
-                            <li><a href="#" class="text-secondary text-decoration-none">Characters</a></li>
-                            <li><a href="#" class="text-secondary text-decoration-none">Comics</a></li>
-                            <li><a href="#" class="text-secondary text-decoration-none">Movies</a></li>
-                            <li><a href="#" class="text-secondary text-decoration-none">TV</a></li>
-                            <li><a href="#" class="text-secondary text-decoration-none">Games</a></li>
-                            <li><a href="#" class="text-secondary text-decoration-none">Videos</a></li>
-                            <li><a href="#" class="text-secondary text-decoration-none">News</a></li>
+                            {dcComicsLink.map(element => (
+                                <li key={element.id}>
+                                    <a href={element.url}>{element.text}</a>
+                                </li>
+                            ))}
                         </ul>
+
                         <h3>SHOP</h3>
                         <ul class="list-unstyled listaFooter">
-                            <li><a href="#" class="text-secondary text-decoration-none">Shop DC</a></li>
-                            <li><a href="#" class="text-secondary text-decoration-none">Shop DC Collectibles</a></li>
+                            {shopLinks.map(element => (
+                                <li key={element.id}>
+                                    <a href={element.url}>{element.text}</a>
+                                </li>
+                            ))}
                         </ul>
                     </div>
 
                     <div class="col-md-2">
                         <h3>DC</h3>
                         <ul class="list-unstyled listaFooter">
-                            <li><a href="#" class="text-secondary text-decoration-none">Terms of Use</a></li>
-                            <li><a href="#" class="text-secondary text-decoration-none">Privacy Policy (New)</a></li>
-                            <li><a href="#" class="text-secondary text-decoration-none">Ad Choices</a></li>
-                            <li><a href="#" class="text-secondary text-decoration-none">Advertising</a></li>
-                            <li><a href="#" class="text-secondary text-decoration-none">Jobs</a></li>
-                            <li><a href="#" class="text-secondary text-decoration-none">Subscriptions</a></li>
-                            <li><a href="#" class="text-secondary text-decoration-none">Talent Workshops</a></li>
-                            <li><a href="#" class="text-secondary text-decoration-none">CPSC Certificates</a></li>
-                            <li><a href="#" class="text-secondary text-decoration-none">Ratings</a></li>
-                            <li><a href="#" class="text-secondary text-decoration-none">Shop Help</a></li>
-                            <li><a href="#" class="text-secondary text-decoration-none">Contact Us</a></li>
+                            {dcLinks.map(element => (
+                                <li key={element.id}>
+                                    <a href={element.url}>{element.text}</a>
+                                </li>
+                            ))}
                         </ul>
                     </div>
 
                     <div class="col-md-2">
                         <h3>SITES</h3>
                         <ul class="list-unstyled listaFooter">
-                            <li><a href="#" class="text-secondary text-decoration-none">DC</a></li>
-                            <li><a href="#" class="text-secondary text-decoration-none">MAD Magazine</a></li>
-                            <li><a href="#" class="text-secondary text-decoration-none">DC Kids</a></li>
-                            <li><a href="#" class="text-secondary text-decoration-none">DC Universe</a></li>
-                            <li><a href="#" class="text-secondary text-decoration-none">DC Power Visa</a></li>
+                            {sitesLink.map(element => (
+                                <li key={element.id}>
+                                    <a href={element.url}>{element.text}</a>
+                                </li>
+                            ))}
                         </ul>
                     </div>
                 </div>

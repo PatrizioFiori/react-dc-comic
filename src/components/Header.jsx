@@ -5,7 +5,7 @@ const Header = (props) => {
     return (
 
 
-        <header className='d-flex align-items-center justify-content-between px-5 my-4'>
+        <header className='d-flex align-items-center justify-content-between px-5 my-2'>
             <figure>
                 <img className='' src={logo} alt="DC Logo" style={{ width: "50px", height: "50px", borderRadius: "50%" }} />
             </figure>
