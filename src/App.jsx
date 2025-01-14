@@ -1,13 +1,15 @@
 import Header from "./components/Header"
 import Main from "./components/Main"
 import Footer from "./components/Footer"
+import navLinks from "./data/navLink"
+import { dcComicsLinks, shopLinks, dcLinks, sitesLink } from "./data/footerLink"
 
 const App = () => {
     return (
         <>
-            <Header />
+            <Header menu={navLinks} />
             <Main />
-            <Footer />
+            <Footer dcComicsLink={dcComicsLinks} shopLinks={shopLinks} dcLinks={dcLinks} sitesLink={sitesLink} />
 
         </>
     )

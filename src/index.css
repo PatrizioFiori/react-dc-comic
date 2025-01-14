@@ -9,34 +9,36 @@
     background-color: rgba(2, 131, 248, 255)
 }
 
-.navLink a {
-    padding-right: 20px;
+.navMenu {
     text-decoration: none;
+    list-style: none;
+    display: flex;
+}
+
+.navMenu li a {
+    padding-right: 20px;
     color: black;
     position: relative;
     text-decoration: none;
+    font-weight: bold;
 }
 
-a::after {
+.navMenu li a::after {
     content: "";
     position: absolute;
     left: 0;
     right: 0;
-    bottom: -37px;
+    bottom: -15px;
     height: 4px;
     width: 75%;
     transform: scaleX(0);
-    /* Nasconde la riga */
     transform-origin: center;
-    /* Punto di origine dell'animazione */
     transition: transform 0.3s ease;
-    /* Aggiunge un'animazione fluida */
     background-color: rgba(2, 131, 248, 255)
 }
 
-.navLink a:hover::after {
+.navMenu li a:hover::after {
     transform: scaleX(1);
-    /* Mostra la riga al passaggio del mouse */
 }
 
 .blueBandLink {
