@@ -9,6 +9,7 @@ import ytLogo from '../assets/img/footer-youtube.png'
 import pintLogo from '../assets/img/footer-pinterest.png'
 import perisLogo from '../assets/img/footer-periscope.png'
 import footerBg from '../assets/img/footer-bg.jpg'
+import ListItem from '../assets/partials/ListItem';
 
 const Footer = (props) => {
     const { dcComicsLink, shopLinks, dcLinks, sitesLink } = props
@@ -42,19 +43,19 @@ const Footer = (props) => {
                     <div class="col-md-2">
                         <h3>DC COMICS</h3>
                         <ul class="list-unstyled listaFooter">
-                            {dcComicsLink.map(element => (
-                                <li key={element.id}>
-                                    <a href={element.url}>{element.text}</a>
-                                </li>
+                            {dcComicsLink.map(elementi => (
+                                <ListItem key={`pa-${elementi.id}`}
+                                    url={elementi.url}
+                                    text={elementi.text} />
                             ))}
                         </ul>
 
                         <h3>SHOP</h3>
                         <ul class="list-unstyled listaFooter">
-                            {shopLinks.map(element => (
-                                <li key={element.id}>
-                                    <a href={element.url}>{element.text}</a>
-                                </li>
+                            {shopLinks.map(elementi => (
+                                <ListItem key={`pa-${elementi.id}`}
+                                    url={elementi.url}
+                                    text={elementi.text} />
                             ))}
                         </ul>
                     </div>
@@ -62,10 +63,10 @@ const Footer = (props) => {
                     <div class="col-md-2">
                         <h3>DC</h3>
                         <ul class="list-unstyled listaFooter">
-                            {dcLinks.map(element => (
-                                <li key={element.id}>
-                                    <a href={element.url}>{element.text}</a>
-                                </li>
+                            {dcLinks.map(elementi => (
+                                <ListItem key={`pa-${elementi.id}`}
+                                    url={elementi.url}
+                                    text={elementi.text} />
                             ))}
                         </ul>
                     </div>

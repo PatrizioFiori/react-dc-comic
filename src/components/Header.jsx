@@ -1,4 +1,5 @@
 import logo from '../assets/img/dc-logo.png';
+import ListItem from '../assets/partials/ListItem';
 
 const Header = (props) => {
     const menu = props.menu
@@ -12,9 +13,9 @@ const Header = (props) => {
             <nav>
                 <ul className='navMenu'>
                     {menu.map(elementi => (
-                        <li key={elementi.id}>
-                            <a href={elementi.url}>{elementi.text}</a>
-                        </li>
+                        <ListItem key={`pa-${elementi.id}`}
+                            url={elementi.url}
+                            text={elementi.text} />
                     ))}
 
                 </ul>
