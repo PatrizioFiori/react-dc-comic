@@ -5,6 +5,12 @@
     box-sizing: border-box;
 }
 
+.jumbotron {
+    max-height: 410px;
+    overflow: hidden;
+}
+
+
 .blueBand {
     background-color: rgba(2, 131, 248, 255)
 }
@@ -13,14 +19,15 @@
     text-decoration: none;
     list-style: none;
     display: flex;
+    width: 100%;
 }
 
 .navMenu li a {
-    padding-right: 20px;
     color: black;
     position: relative;
     text-decoration: none;
     font-weight: bold;
+    padding-right: 40px;
 }
 
 .navMenu li a::after {

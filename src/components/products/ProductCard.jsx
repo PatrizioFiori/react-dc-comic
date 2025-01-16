@@ -1,13 +1,19 @@
-import React from 'react'
-
-const ProductCard = () => {
+const cards = (props) => {
+    const { id, thumb, title } = props.cardData;
     return (
-        <div>
-            <div className="prod-card">
+        <div className="containerCarte" key={id}>
+            <div className="rowCarte">
+                <div className="colCarte">
+                    <div className="imgCarte">
+                        <img src={thumb} alt="" />
+                    </div>
+                    <div className="titolo">
+                        <h3>{title}</h3>
+                    </div>
+                </div>
             </div>
-
         </div>
     )
 }
 
-export default ProductCard
+export default cards;

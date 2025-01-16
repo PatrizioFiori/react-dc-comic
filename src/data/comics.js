@@ -153,4 +153,4 @@ const comics = [
   },
 ];
 
-module.exports = comics;
+export default comics;
